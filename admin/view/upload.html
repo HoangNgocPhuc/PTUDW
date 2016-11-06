@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang upload</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/tooltip.js"></script>
+
+</head>
+<body>
+<!-- upload -->
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-right">
+            <ul class="sidebar-nav-right">
+                <li class="sidebar-brand">
+                    <a href="#">Menu cá nhân
+                        <i class="glyphicon glyphicon-chevron-right pull-right toggle" id="menu-close" style="margin-top: 15px;"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="upload-right" data-toggle="modal" data-target="#login-modal">
+                            <i class="icon-upload-1"></i>
+                            <span>Tải lên</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            <i class="icon-bell-o">
+
+                            </i>
+                            Thông báo
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="user dropdown-toggle" data-toggle="dropdown">
+
+                            <img src="img/img1.jpg" class="img-circle">
+                            Nguyễn Công Hoan
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                            <div>
+                                <a href="#">
+                                    <span>Hòm thư</span>
+                                    <div class="num-span">1</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Doanh thu:</span>
+                                    <div class="num2-span">150.000</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Số dư:</span>
+                                    <div class="num2-span">2.000</div>
+                                </a>
+                            </div>
+                            <div><a href="#">Nạp tiền</a></div>
+                            <div><a href="#">Chuyển tiền</a></div>
+                            <div class="end">
+                                <a href="#">Đăng xuất</a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+            <div class="header-top container">
+                    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+                    <a id="menu-toggle-right" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-user"></i></a>
+                    <div class="row">
+                        <div class="col-md-4 col-sx-12 wow fadeInLeft delay-08s">
+                            <div class="search-group search-header">
+                                <input type="text" name="" placeholder="Tìm kiếm" />
+                                <a href="#" class="icon-search icon-search-fix"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sx-12 img-header-top">
+                            <a href="#" class="img-header">
+                                <img src="img/logo-header.png">
+                            </a>
+                        </div>
+                        <div class="login-group col-md-4 col-sx-12">
+            <!--  <a href="#" class="btn btn-sm btn-houz"  data-toggle="modal" data-target="#login-modal">
+                Đăng nhập
+              </a>
+              <div class="clear"></div> -->
+
+              <a href="#" class="btn btn-sm btn-houz button button-1 button-1b"  data-toggle="modal" data-target="#login-modal">
+                <i class="icon-upload-1"></i>
+                <span>Tải lên</span>
+              </a>
+              <!-- đang làm -->
+              <div class="notification">
+                <a href="#">
+
+                    <span class="fa fa-fw icon-bell-o faa-ring animated">
+
+                    </span>
+                    <span class="num">3</span>
+                </a>
+              </div>
+              <!-- đang làm -->
+              <div class="user dropdown">
+                <a href="#" type="button" data-toggle="dropdown">
+                    <img src="img/img1.jpg" class="img-circle">
+                    <span>Nguyễn Công Hoan</span>
+                </a>  
+                <div class="dropdown-menu">
+                    <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                    <div>
+                        <a href="#">
+                            <span>Hòm thư</span>
+                            <div class="num-span">1</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Doanh thu:</span>
+                            <div class="num2-span">150.000</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Số dư:</span>
+                            <div class="num2-span">2.000</div>
+                        </a>
+                    </div>
+                    <div><a href="#">Nạp tiền</a></div>
+                    <div><a href="#">Chuyển tiền</a></div>
+                    <div class="end">
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+</div>
+<div class="upload">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- upload -->
+            <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+                    <!-- name -->
+                    <div class="col-md-12 page-header header">
+                        <div class="big">
+                            ĐĂNG BÁN VÀ CHIA SẺ MODEL TẠI 9HOUZ.COM
+                        </div>
+                        <div class="small">
+                            Chúng tôi sẽ đem đến cho bạn <b>10.000.000</b> khách hàng, danh tiếng và hơn thế nữa
+                        </div>
+                    </div>
+                    <!-- end name -->
+                    <!-- form -->
+                    <div class="col-md-12">
+                        <div class="form">
+                            <div>
+                                <label class="btn btn-default btn-lg btn-file set-width">
+                                    <span class="fa fa-cloud-upload"></span>&nbsp&nbsp Tải lên <input type= "file" style="display: none;">
+                                </label>
+                            </div>
+                            <div class="text-drag-drop-file">
+                                <span>Chọn nút tải lên hoặc kéo file thả vào đây</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end form -->
+                    <!-- thông tin quảng cáo -->
+                    <div class="col-md-12">
+                        <div class="infor">
+                            <div class="tit">
+                                Lý do bạn nên đăng bán tại 9Houz.com
+                            </div>
+                            <br>
+                            <div class="example">
+                                <div class="row">
+                                    <div class="col-xs-3 img">
+                                        <div>
+                                            <img src="img/images/img-upload/person.gif">
+                                        </div>
+                                        <div>
+                                            Tiếp cận 10 triệu khách hàng tiền năng
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 img">
+                                        <div>
+                                            <img src="img/images/img-upload/g+.gif">
+                                        </div>
+                                        <div>
+                                            Xuất hiện tại top 3 các công cụ tìm kiếm
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 img">
+                                        <div>
+                                            <img src="img/images/img-upload/money.gif">
+                                        </div>
+                                        <div>
+                                            Nhận 70% doanh thu và không ngừng gia tăng thu nhập
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 img">
+                                        <div>
+                                            <img src="img/images/img-upload/com.gif">
+                                        </div>
+                                        <div>
+                                            Quản lý và lưu trữ không giới hạn và hoàn toàn miễn phí
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end thông tin quảng cao -->
+                </div>
+            </div>
+        </div>
+        <!-- end upload -->
+    </div>
+</div>
+<!-- end upload -->
+
+<!-- upload lỗi -->
+ <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-right">
+            <ul class="sidebar-nav-right">
+                <li class="sidebar-brand">
+                    <a href="#">Menu cá nhân
+                        <i class="glyphicon glyphicon-chevron-right pull-right toggle" id="menu-close" style="margin-top: 15px;"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="upload-right" data-toggle="modal" data-target="#login-modal">
+                            <i class="icon-upload-1"></i>
+                            <span>Tải lên</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            <i class="icon-bell-o">
+
+                            </i>
+                            Thông báo
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="user dropdown-toggle" data-toggle="dropdown">
+
+                            <img src="img/img1.jpg" class="img-circle">
+                            Nguyễn Công Hoan
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                            <div>
+                                <a href="#">
+                                    <span>Hòm thư</span>
+                                    <div class="num-span">1</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Doanh thu:</span>
+                                    <div class="num2-span">150.000</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Số dư:</span>
+                                    <div class="num2-span">2.000</div>
+                                </a>
+                            </div>
+                            <div><a href="#">Nạp tiền</a></div>
+                            <div><a href="#">Chuyển tiền</a></div>
+                            <div class="end">
+                                <a href="#">Đăng xuất</a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+            <div class="header-top container">
+                    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+                    <a id="menu-toggle-right" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-user"></i></a>
+                    <div class="row">
+                        <div class="col-md-4 col-sx-12 wow fadeInLeft delay-08s">
+                            <div class="search-group search-header">
+                                <input type="text" name="" placeholder="Tìm kiếm" />
+                                <a href="#" class="icon-search icon-search-fix"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sx-12 img-header-top">
+                            <a href="#" class="img-header">
+                                <img src="img/logo-header.png">
+                            </a>
+                        </div>
+                        <div class="login-group col-md-4 col-sx-12">
+            <!--  <a href="#" class="btn btn-sm btn-houz"  data-toggle="modal" data-target="#login-modal">
+                Đăng nhập
+              </a>
+              <div class="clear"></div> -->
+
+              <a href="#" class="btn btn-sm btn-houz button button-1 button-1b"  data-toggle="modal" data-target="#login-modal">
+                <i class="icon-upload-1"></i>
+                <span>Tải lên</span>
+              </a>
+              <!-- đang làm -->
+              <div class="notification">
+                <a href="#">
+
+                    <span class="fa fa-fw icon-bell-o faa-ring animated">
+
+                    </span>
+                    <span class="num">3</span>
+                </a>
+              </div>
+              <!-- đang làm -->
+              <div class="user dropdown">
+                <a href="#" type="button" data-toggle="dropdown">
+                    <img src="img/img1.jpg" class="img-circle">
+                    <span>Nguyễn Công Hoan</span>
+                </a>  
+                <div class="dropdown-menu">
+                    <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                    <div>
+                        <a href="#">
+                            <span>Hòm thư</span>
+                            <div class="num-span">1</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Doanh thu:</span>
+                            <div class="num2-span">150.000</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Số dư:</span>
+                            <div class="num2-span">2.000</div>
+                        </a>
+                    </div>
+                    <div><a href="#">Nạp tiền</a></div>
+                    <div><a href="#">Chuyển tiền</a></div>
+                    <div class="end">
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<div class="upload-erorr">
+<div class="container-fluid">
+    <div class="row">
+        <!-- upload -->
+        <div class="col-md-8 col-md-offset-2">
+            <div class="">
+                <!-- form -->
+                <div class="form">
+                    <div>
+                        <label class="btn btn-default btn-lg btn-file set-width">
+                            <span class="fa fa-cloud-upload"></span>&nbsp&nbsp Tải lên <input type="file"   style="display: none;">
+                        </label>
+                    </div>
+                    <div class="text-drag-drop-file">
+                        Chọn nút tải lên hoặc kéo file thả vào đây
+                    </div>
+                </div>
+                <!-- end form -->
+
+                <!-- erorr -->
+                <div class="bottom-top-50px">
+                    <div class="alert alert-danger alert-dismissible noti" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>&nbsp&nbsp<span>(abc.psd)</span> - đã hủy tải lên
+                    </div>
+                    <div class="alert alert-danger alert-dismissible noti" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>&nbsp&nbsp<span>(abc.psd)</span> - đã hủy tải lên
+                    </div>
+                </div>
+                <!-- end erorr -->
+            </div>
+        </div>
+        <!-- end upload -->
+    </div>
+</div>
+</div>
+<!-- end upload lỗi -->
+
+<!-- upload avatar -->
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-right">
+            <ul class="sidebar-nav-right">
+                <li class="sidebar-brand">
+                    <a href="#">Menu cá nhân
+                        <i class="glyphicon glyphicon-chevron-right pull-right toggle" id="menu-close" style="margin-top: 15px;"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="upload-right" data-toggle="modal" data-target="#login-modal">
+                            <i class="icon-upload-1"></i>
+                            <span>Tải lên</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            <i class="icon-bell-o">
+
+                            </i>
+                            Thông báo
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="user dropdown-toggle" data-toggle="dropdown">
+
+                            <img src="img/img1.jpg" class="img-circle">
+                            Nguyễn Công Hoan
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                            <div>
+                                <a href="#">
+                                    <span>Hòm thư</span>
+                                    <div class="num-span">1</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Doanh thu:</span>
+                                    <div class="num2-span">150.000</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Số dư:</span>
+                                    <div class="num2-span">2.000</div>
+                                </a>
+                            </div>
+                            <div><a href="#">Nạp tiền</a></div>
+                            <div><a href="#">Chuyển tiền</a></div>
+                            <div class="end">
+                                <a href="#">Đăng xuất</a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+            <div class="header-top container">
+                    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+                    <a id="menu-toggle-right" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-user"></i></a>
+                    <div class="row">
+                        <div class="col-md-4 col-sx-12 wow fadeInLeft delay-08s">
+                            <div class="search-group search-header">
+                                <input type="text" name="" placeholder="Tìm kiếm" />
+                                <a href="#" class="icon-search icon-search-fix"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sx-12 img-header-top">
+                            <a href="#" class="img-header">
+                                <img src="img/logo-header.png">
+                            </a>
+                        </div>
+                        <div class="login-group col-md-4 col-sx-12">
+            <!--  <a href="#" class="btn btn-sm btn-houz"  data-toggle="modal" data-target="#login-modal">
+                Đăng nhập
+              </a>
+              <div class="clear"></div> -->
+
+              <a href="#" class="btn btn-sm btn-houz button button-1 button-1b"  data-toggle="modal" data-target="#login-modal">
+                <i class="icon-upload-1"></i>
+                <span>Tải lên</span>
+              </a>
+              <!-- đang làm -->
+              <div class="notification">
+                <a href="#">
+
+                    <span class="fa fa-fw icon-bell-o faa-ring animated">
+
+                    </span>
+                    <span class="num">3</span>
+                </a>
+              </div>
+              <!-- đang làm -->
+              <div class="user dropdown">
+                <a href="#" type="button" data-toggle="dropdown">
+                    <img src="img/img1.jpg" class="img-circle">
+                    <span>Nguyễn Công Hoan</span>
+                </a>  
+                <div class="dropdown-menu">
+                    <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                    <div>
+                        <a href="#">
+                            <span>Hòm thư</span>
+                            <div class="num-span">1</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Doanh thu:</span>
+                            <div class="num2-span">150.000</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Số dư:</span>
+                            <div class="num2-span">2.000</div>
+                        </a>
+                    </div>
+                    <div><a href="#">Nạp tiền</a></div>
+                    <div><a href="#">Chuyển tiền</a></div>
+                    <div class="end">
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+</div>
+<div class="set-bg">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="product col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="left">
+                            <div class="avatar">
+
+                                <div class="icon">
+                                    <i class="fa fa-cloud-upload cloud-upload" aria-hidden="true"></i>
+                                    <br><br>
+                                    Đang tải file lên
+                                </div>
+                            </div>
+                            <div class="progress progress-upload">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40"
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">60% Complete (success)</span>
+                                </div>
+                            </div>
+
+                            <div class="row alert alert-success close-download">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        1MB trong 4MB tải lên (abc.jpg)
+                                    </div>
+                                    <div class="col-md-4">
+                                        <span class="btn btn-default">Hủy tải <span
+                                                class="glyphicon glyphicon-remove-circle" style="color:#ffa098"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 right">
+                        <form>
+                            <div class="row">
+                                <!-- tên model và danh mục -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!-- tên model -->
+                                        <div class="">
+                                            <label for="usr">Tên model <span class="star">*</span></label>
+                                            <input type="text" class="form-control set-text-key" id="usr"
+                                                   placeholder='Nhập tên mô hình'>
+                                        </div>
+                                        <!-- end tên model -->
+                                        <br>
+                                        <!-- danh mục -->
+                                        <div class="">
+                                            <label for="sel1">Danh mục <span class="star">*</span></label>
+                                            <select class="form-control" id="sel1">
+                                                <option>Chọn danh mục</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                        <!-- end danh mục -->
+                                    </div>
+                                </div>
+                                <!-- end tên model và danh mục -->
+                                <!-- giá bán và chọn danh mục -->
+                                <div class="col-md-6">
+                                    <!-- giá bán -->
+                                    <div class="form-group">
+                                        <label>Giá bán <span class="star">*</span></label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control set-text-key" id="usr"
+                                                   placeholder='Nhập giá bán'>
+                                            <span class="input-group-addon">VNĐ</span>
+                                        </div>
+                                    <!-- end giá bán -->
+                                        <br>
+                                    <!-- chọn danh mục -->
+                                        <label>Chọn danh mục</label>
+                                        <select class="form-control">
+                                            <option>Chọn danh mục con</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <!-- end chọn danh mục -->
+                                </div>
+                                <!-- end giá bán và chọn danh mục -->
+                            </div>
+                            <div class="form-group">
+                                <!-- giới thiệu -->
+                                <label for="comment">Giới thiệu</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                <!-- end giới thiệu -->
+                                <br><br>
+                                <!-- nút tải ảnh -->
+                                <label>Ảnh mô tả <span class="star">*</span></label><br>
+                                <label class="btn btn-default btn-file ">
+                                    Tải ảnh lên <input type="file" style="display: none;">
+                                </label>
+                                &nbsp&nbsp<span
+                                    class="color-text">Ảnh tải lên tối thiểu 4 ảnh, hỗ trợ jpg, png, jpec...</span>
+                                <!-- end nút tải ảnh -->
+
+                                <br><br><br>
+                                <!-- từ khóa -->
+                                <div class="form-group">
+                                    <label for="usr">Từ khóa </label>
+                                    <input type="text" class="form-control set-text-key" id="usr"
+                                           placeholder='Các từ khóa ngăn cách nhau bằng dấu  " , "'>
+                                </div>
+                                <!-- end từ khóa -->
+                                <a class="btn btn-primary btn-lg submit" href="#" role="button">Đồng ý</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end upload avatar -->
+
+<!-- choose avatar -->
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-right">
+            <ul class="sidebar-nav-right">
+                <li class="sidebar-brand">
+                    <a href="#">Menu cá nhân
+                        <i class="glyphicon glyphicon-chevron-right pull-right toggle" id="menu-close" style="margin-top: 15px;"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="upload-right" data-toggle="modal" data-target="#login-modal">
+                            <i class="icon-upload-1"></i>
+                            <span>Tải lên</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            <i class="icon-bell-o">
+
+                            </i>
+                            Thông báo
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="user dropdown-toggle" data-toggle="dropdown">
+
+                            <img src="img/img1.jpg" class="img-circle">
+                            Nguyễn Công Hoan
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                            <div>
+                                <a href="#">
+                                    <span>Hòm thư</span>
+                                    <div class="num-span">1</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Doanh thu:</span>
+                                    <div class="num2-span">150.000</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Số dư:</span>
+                                    <div class="num2-span">2.000</div>
+                                </a>
+                            </div>
+                            <div><a href="#">Nạp tiền</a></div>
+                            <div><a href="#">Chuyển tiền</a></div>
+                            <div class="end">
+                                <a href="#">Đăng xuất</a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+            <div class="header-top container">
+                    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+                    <a id="menu-toggle-right" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-user"></i></a>
+                    <div class="row">
+                        <div class="col-md-4 col-sx-12 wow fadeInLeft delay-08s">
+                            <div class="search-group search-header">
+                                <input type="text" name="" placeholder="Tìm kiếm" />
+                                <a href="#" class="icon-search icon-search-fix"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sx-12 img-header-top">
+                            <a href="#" class="img-header">
+                                <img src="img/logo-header.png">
+                            </a>
+                        </div>
+                        <div class="login-group col-md-4 col-sx-12">
+            <!--  <a href="#" class="btn btn-sm btn-houz"  data-toggle="modal" data-target="#login-modal">
+                Đăng nhập
+              </a>
+              <div class="clear"></div> -->
+
+              <a href="#" class="btn btn-sm btn-houz button button-1 button-1b"  data-toggle="modal" data-target="#login-modal">
+                <i class="icon-upload-1"></i>
+                <span>Tải lên</span>
+              </a>
+              <!-- đang làm -->
+              <div class="notification">
+                <a href="#">
+
+                    <span class="fa fa-fw icon-bell-o faa-ring animated">
+
+                    </span>
+                    <span class="num">3</span>
+                </a>
+              </div>
+              <!-- đang làm -->
+              <div class="user dropdown">
+                <a href="#" type="button" data-toggle="dropdown">
+                    <img src="img/img1.jpg" class="img-circle">
+                    <span>Nguyễn Công Hoan</span>
+                </a>  
+                <div class="dropdown-menu">
+                    <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                    <div>
+                        <a href="#">
+                            <span>Hòm thư</span>
+                            <div class="num-span">1</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Doanh thu:</span>
+                            <div class="num2-span">150.000</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Số dư:</span>
+                            <div class="num2-span">2.000</div>
+                        </a>
+                    </div>
+                    <div><a href="#">Nạp tiền</a></div>
+                    <div><a href="#">Chuyển tiền</a></div>
+                    <div class="end">
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+</div>
+<div class="set-bg">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="choose-avatar col-md-12">
+                <div class="row">
+                    <div class="col-md-4 left">
+                        <div class="avatar">
+
+                            <div class="icon">
+                                <i class="fa fa-cloud-upload cloud-upload" aria-hidden="true"></i>
+                                <br><br>
+                                Đang tải file lên
+                            </div>
+                        </div>
+                        <div class="progress progress-upload">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <span class="sr-only">60% Complete (success)</span>
+                            </div>
+                        </div>
+
+                        <div class="row alert alert-success close-download">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    1MB trong 4MB tải lên (abc.jpg)
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="btn btn-default">Hủy tải <span
+                                            class="glyphicon glyphicon-remove-circle" style="color:#ffa098"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 right">
+                        <form>
+                            <div class="row">
+                                <!-- tên model và danh mục -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!-- tên model -->
+                                        <label for="usr">Tên model <span class="star">*</span></label>
+                                        <input type="text" class="form-control set-text-key" id="usr"
+                                               placeholder='Nhập tên mô hình'>
+                                        <!-- end tên model -->
+                                        <br>
+                                        <!-- danh mục -->
+                                        <label for="sel1">Danh mục <span class="star">*</span></label>
+                                        <select class="form-control" id="sel1">
+                                            <option>Chọn danh mục</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                        <!-- end danh mục -->
+                                    </div>
+                                </div>
+                                <!-- end tên model và danh mục -->
+
+                                <!-- giá bán và chọn danh mục -->
+                                <div class="col-md-6">
+                                    <!-- giá bán -->
+                                    <div class="form-group">
+                                        <label>Giá bán <span class="star">*</span></label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control set-text-key" id="usr"
+                                                   placeholder='Nhập giá bán' style="width:100%">
+                                            <span class="input-group-addon">VNĐ</span>
+                                        </div>
+                                    <!-- end giá bán -->
+                                        <br>
+                                    <!-- chọn danh mục -->
+                                        <label>Chọn danh mục</label>
+                                        <select class="form-control">
+                                            <option>Chọn danh mục con</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <!-- end chọn danh mục -->
+                                </div>
+                                <!-- end giá bán và chọn danh mục -->
+                            </div>
+                            <div class="form-group">
+                                <!-- giới thiệu -->
+                                <label for="comment">Giới thiệu</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                <!-- end giới thiệu -->
+                                <br><br>
+                                <label>Ảnh mô tả <span class="star">*</span></label><br>
+                                <!-- tooltip -->
+                                <div class="form-group">
+                                    <div class="pull-left control-label img-wrap" id="img-wrap-2">
+                                        <img src="img/images/img-upload/img-choose-avatar/des.jpg"/>
+                                        <a href="" class="delete">
+                                            <div class="icon-delete" id="icon-delete-2" data-toggle="tooltip"
+                                                 data-placement="left" title="Xóa">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="avatar">
+                                            <div class="icon-flag" id="icon-flag-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Chọn làm ảnh đại diện">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pull-left control-label img-wrap" id="img-wrap-2">
+                                        <img src="img/images/img-upload/img-choose-avatar/des.jpg"/>
+                                        <a href="" class="delete">
+                                            <div class="icon-delete" id="icon-delete-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Xóa">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="avatar">
+                                            <div class="icon-flag" id="icon-flag-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Chọn làm ảnh đại diện">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pull-left control-label img-wrap" id="img-wrap-2">
+                                        <img src="img/images/img-upload/img-choose-avatar/des.jpg"/>
+                                        <a href="" class="delete">
+                                            <div class="icon-delete" id="icon-delete-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Xóa">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="avatar">
+                                            <div class="icon-flag" id="icon-flag-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Chọn làm ảnh đại diện">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pull-left control-label img-wrap" id="img-wrap-2">
+                                        <img src="img/images/img-upload/img-choose-avatar/des.jpg"/>
+                                        <a href="" class="delete">
+                                            <div class="icon-delete" id="icon-delete-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Xóa">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="avatar">
+                                            <div class="icon-flag" id="icon-flag-2" data-toggle="tooltip"
+                                                 data-placement="right" title="Chọn làm ảnh đại diện">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end tooltip -->
+                                <div class="clearfix"></div>
+                                <!-- nút tải ảnh -->
+                                <div>
+                                    <label class="btn btn-default btn-file">
+                                        Tải ảnh lên <input type="file" style="display: none;">
+                                    </label>
+                                    &nbsp&nbsp<span class="color-text">Ảnh tải lên tối thiểu 4 ảnh, hỗ trợ jpg, png, jpec...</span>
+                                </div>
+                                <!-- end nút tải ảnh -->
+                                <br><br><br>
+                                <!-- từ khóa -->
+                                <div class="form-group">
+                                    <label for="usr">Từ khóa </label>
+                                    <input type="text" class="form-control set-text-key" id="usr"
+                                           placeholder='Các từ khóa ngăn cách nhau bằng dấu  " , "'>
+                                </div>
+                                <!-- end từ khóa -->
+                                <a class="btn btn-primary btn-lg submit" href="#" role="button">Đồng ý</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end choose avatar -->
+
+<!-- update success -->
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-right">
+            <ul class="sidebar-nav-right">
+                <li class="sidebar-brand">
+                    <a href="#">Menu cá nhân
+                        <i class="glyphicon glyphicon-chevron-right pull-right toggle" id="menu-close" style="margin-top: 15px;"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="upload-right" data-toggle="modal" data-target="#login-modal">
+                            <i class="icon-upload-1"></i>
+                            <span>Tải lên</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            <i class="icon-bell-o">
+
+                            </i>
+                            Thông báo
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="user dropdown-toggle" data-toggle="dropdown">
+
+                            <img src="img/img1.jpg" class="img-circle">
+                            Nguyễn Công Hoan
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                            <div>
+                                <a href="#">
+                                    <span>Hòm thư</span>
+                                    <div class="num-span">1</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Doanh thu:</span>
+                                    <div class="num2-span">150.000</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span>Số dư:</span>
+                                    <div class="num2-span">2.000</div>
+                                </a>
+                            </div>
+                            <div><a href="#">Nạp tiền</a></div>
+                            <div><a href="#">Chuyển tiền</a></div>
+                            <div class="end">
+                                <a href="#">Đăng xuất</a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+            <div class="header-top container">
+                    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+                    <a id="menu-toggle-right" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-user"></i></a>
+                    <div class="row">
+                        <div class="col-md-4 col-sx-12 wow fadeInLeft delay-08s">
+                            <div class="search-group search-header">
+                                <input type="text" name="" placeholder="Tìm kiếm" />
+                                <a href="#" class="icon-search icon-search-fix"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sx-12 img-header-top">
+                            <a href="#" class="img-header">
+                                <img src="img/logo-header.png">
+                            </a>
+                        </div>
+                        <div class="login-group col-md-4 col-sx-12">
+            <!--  <a href="#" class="btn btn-sm btn-houz"  data-toggle="modal" data-target="#login-modal">
+                Đăng nhập
+              </a>
+              <div class="clear"></div> -->
+
+              <a href="#" class="btn btn-sm btn-houz button button-1 button-1b"  data-toggle="modal" data-target="#login-modal">
+                <i class="icon-upload-1"></i>
+                <span>Tải lên</span>
+              </a>
+              <!-- đang làm -->
+              <div class="notification">
+                <a href="#">
+
+                    <span class="fa fa-fw icon-bell-o faa-ring animated">
+
+                    </span>
+                    <span class="num">3</span>
+                </a>
+              </div>
+              <!-- đang làm -->
+              <div class="user dropdown">
+                <a href="#" type="button" data-toggle="dropdown">
+                    <img src="img/img1.jpg" class="img-circle">
+                    <span>Nguyễn Công Hoan</span>
+                </a>  
+                <div class="dropdown-menu">
+                    <div class="title"><a href="#">Thông tin cá nhân</a></div>
+                    <div>
+                        <a href="#">
+                            <span>Hòm thư</span>
+                            <div class="num-span">1</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Doanh thu:</span>
+                            <div class="num2-span">150.000</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>Số dư:</span>
+                            <div class="num2-span">2.000</div>
+                        </a>
+                    </div>
+                    <div><a href="#">Nạp tiền</a></div>
+                    <div><a href="#">Chuyển tiền</a></div>
+                    <div class="end">
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+</div>
+<div class="set-bg">
+<div class="container-fluid">
+    <div class="row">
+        <!-- upload -->
+        <div class="col-md-8 col-md-offset-2">
+            <div class="upload-success">
+                <!-- form -->
+                <div class="form">
+                    <div>
+                        <label class="btn btn-default btn-lg btn-file set-width">
+                            <span class="fa fa-cloud-upload"></span>&nbsp&nbsp Tải lên <input type="file"
+                                                                                              style="display: none;">
+                        </label>
+                    </div>
+                    <div class="text-drag-drop-file">
+                        Chọn nút tải lên hoặc kéo file thả vào đây
+                    </div>
+                </div>
+                <!-- end form -->
+                <!-- erorr -->
+                <div class="bottom-top-50px">
+                    <div class="alert alert-danger alert-dismissible noti" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp&nbsp<span>(abc.psd)</span> - tải lên thành công
+                    </div>
+                </div>
+                <!-- end erorr -->
+            </div>
+        </div>
+        <!-- end upload -->
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="infor-upload-success col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="left">
+                            <div class="avatar">
+                                <div class="icon">
+                                    <a href=""><img src="img/images/img-upload/img-choose-avatar/avt.jpg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="right">
+                            <div class="row">
+                                <div class="col-md-9 title">
+                                    <a href="">Xe oto đời mới</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="price">
+                                        35.000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">Danh mục</div>
+                                <ol class="breadcrumb list">
+                                    <li><a href="#">Xe tải</a></li>
+                                    <li><a href="#">Xe con</a></li>
+                                </ol>
+                            </div>
+                            <div class="introduce">
+                                <div class="name">Giới thiệu</div>
+                                <div class="des">Yonhap dẫn lời ông Zhe Sun, giám đốc chương trình nghiên cứu Trung Quốc
+                                    tại Trường Các vấn đề Công và Quốc tế thuộc Đại học Columbia, cho biết giới học giả
+                                    và giới hoạch định chính sách Trung Quốc đang thảo luận về vấn đề Triều Tiên.
+                                </div>
+                            </div>
+                            <div class="img-description">
+                                <div class="name">Ảnh mô tả</div>
+
+                                <div class="form-group">
+                                    <div class="pull-left control-label img-wrap" id="img-wrap-2">
+                                        <img src="img/images/img-upload/img-choose-avatar/des.jpg"/>
+                                        <a href="" class="delete">
+                                            <div class="icon-delete" id="icon-delete-2" data-toggle="tooltip"
+                                                 data-placement="left" title="Xóa">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="avatar">
+                                            <div class="icon-flag" id="icon-flag-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Chọn làm ảnh đại diện">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pull-left control-label img-wrap" id="img-wrap-2">
+                                        <img src="img/images/img-upload/img-choose-avatar/des.jpg"/>
+                                        <a href="" class="delete">
+                                            <div class="icon-delete" id="icon-delete-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Xóa">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="avatar">
+                                            <div class="icon-flag" id="icon-flag-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Chọn làm ảnh đại diện">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pull-left control-label img-wrap" id="img-wrap-2">
+                                        <img src="img/images/img-upload/img-choose-avatar/des.jpg"/>
+                                        <a href="" class="delete">
+                                            <div class="icon-delete" id="icon-delete-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Xóa">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="avatar">
+                                            <div class="icon-flag" id="icon-flag-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Chọn làm ảnh đại diện">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pull-left control-label img-wrap" id="img-wrap-2">
+                                        <img src="img/images/img-upload/img-choose-avatar/des.jpg"/>
+                                        <a href="" class="delete">
+                                            <div class="icon-delete" id="icon-delete-2" data-toggle="tooltip"
+                                                 data-placement="top" title="Xóa">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="avatar">
+                                            <div class="icon-flag" id="icon-flag-2" data-toggle="tooltip"
+                                                 data-placement="right" title="Chọn làm ảnh đại diện">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="keyword">
+                                <div class="name">Từ khóa</div>
+                                <div class="key">
+                                    <a href=""><span class="label label-default" style="color:red">Oto</span></a>
+                                    <a href=""><span class="label label-default" style="color:red">3D Max</span></a>
+                                    <a href=""><span class="label label-default" style="color:red">Miễn phí</span></a>
+                                    <a href=""><span class="label label-default" style="color:red">Mec</span></a>
+                                    <a href=""><span class="label label-default" style="color:red">Vẽ tranh</span></a>
+                                    <a href=""><span class="label label-default" style="color:red">Máy tính</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end update success -->
+</body>
+</html>
